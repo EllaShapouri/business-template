@@ -2,7 +2,7 @@ html {
     box-sizing: border-box;
 }
 
-/* if you use some modules that they have another box-sizing , below style do not change it*/
+/* if you use some modules that they have another box-sizing, bellow style do not change it*/
 *,
 *::after,
 *::before {
@@ -12,6 +12,10 @@ html {
 body {
     font-family: tahoma, serif;
     line-height: 1.6;
+}
+
+input{
+    font: transparent;
 }
 
 .inner-container{
@@ -57,6 +61,7 @@ body {
 .banner_tagline {
     margin-top: 0;
     color: #ccc;
+    text-transform: uppercase;
 }
 .banner_date {
     color: #ccc;
@@ -77,6 +82,107 @@ body {
 .main {
 
 }
-.footer {
 
+.contact-us {
+    padding: 2em;
+}
+
+.contact-us-title {
+    font-size: 1.2em;
+    color: #333;
+    border-bottom: 3px solid #4DD0E1;
+    margin: 0 1.4em 1em;
+    padding-bottom: 0.5em;
+}
+
+.contact-wrapper {
+    white-space: nowrap;
+}
+
+.contact-text {
+    color : #777;
+    display: inline-block;
+}
+
+.contact-icon {
+    color : #777;
+    display: inline-block;
+    vertical-align: top;
+    margin: .3em .5em;
+}
+
+.location {
+    height: 20em;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* FOOTER STYLES */
+
+.footer {
+    background-color: #2e2e2e;
+    color: #ccc;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.footer_title {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.footer_tadline {
+    font-size: 1em;
+    margin: 0 auto;
+}
+.email-box {
+    display: table;
+    margin: 2em auto;
+    white-space: nowrap;
+    border: 1px solid #7f7f7f;
+}
+.email {
+    padding: .5em 1em;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: .9em;
+}
+
+.email:focus{
+    outline: none;
+}
+.email-btn {
+    color: #c1c1c1;
+    text-decoration: none;
+    padding: .5em 1em;
+    background-color: #7f7f7f;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 -2px;
+}
+.social-wrapper {
+    margin: 1em auto;
+    padding: 0;
+}
+.social-links {
+    display: inline-block;
+    list-style: none;
+}
+.copyright {
+    color: #7f7f7f;
+}
+.social-link {
+    color: #7f7f7f;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: .7em;
+}
+
+.social-link:hover {
+    color: #a7a7a7;
 }
