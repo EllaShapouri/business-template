@@ -83,8 +83,61 @@ input{
 
 }
 
-.contact-us {
+.section-tilte {
+    font-size: 1.2em;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding-bottom: .7em ;
+}
+
+.section-tilte::after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
+    width: 5em;
+    height: .1em;
+    background: #b0e1f5;
+}
+
+.section-tagline {
+    font-size: .9em;
+    color: #777;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.our-contact {
     padding: 2em;
+}
+
+.input{
+    display: block;
+    width: 100%;
+    padding: .5em;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: .9em;
+    font-family: inherit;
+    margin: 1em 0;
+}
+
+.contact-btn {
+   background-color: #008ecc;
+   color: #fff;
+   text-transform: uppercase;
+   border: none;
+   text-align: center;
+   font-size: .9em;
+}
+
+.contact-btn:hover {
+    cursor: pointer;
 }
 
 .contact-us-title {
