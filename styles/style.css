@@ -193,6 +193,77 @@ input{
     background-color: hsla(0, 100%, 100%, .5);
 }
 
+/* PEPLE COMMENTS SECTION */
+
+.people-say {
+    width: 100%;
+    background: linear-gradient(
+      rgba(35, 202, 253, 0.405), 
+      rgba(35, 202, 253, 0.405)
+    ),
+    url('../images/5.jpg') no-repeat center top/cover;
+}
+
+.people-section-wrapper {
+    padding: 3em 0 2em 0;
+    text-align: center;
+}
+
+.white_title {
+    color: #fff;
+}
+
+.white_title::after {
+    background-color: #fff;
+}
+
+.person-picture {
+    width: 4.5em;
+    border: .15em solid #fff;
+    border-radius: 50%;
+    margin: 1em 0;
+}
+
+.comment-box {
+    color: #fff;
+    position: relative;
+    padding-bottom: 1em;
+}
+
+.person-name {
+    font-size: 1em;
+    margin: 0;
+}
+
+.person-comment {
+    font-size: .9em;
+}
+
+.left-quote {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right-quote {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.buttons {
+    display: table;
+    border: .1em solid #fff;
+    padding: .2em .5em;
+    margin: 1em auto 0 auto;
+}
+
+.change-comment {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none; 
+}
+
 /* CONTACT STYLES */
 
 .our-contact {
