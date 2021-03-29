@@ -18,6 +18,16 @@ input{
     font: transparent;
 }
 
+.clearfix::after,
+.clearfix::before {
+    content: ' ';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
 .inner-container{
     width: 90%;
     max-width: 75em;
@@ -119,9 +129,16 @@ input{
     padding: 3em 0 ;
 }
 
+.project-wrapper{
+    float: left;
+    width: 50%;
+    padding: .5em;
+}
+
 .project {
     position: relative;
     overflow: hidden;
+    margin: 0;
 }
 
 .project-img {
@@ -173,8 +190,8 @@ input{
 
 .project_icons li {
     list-style: none;
-    display: inline-block;
-    margin: 0 -3px;
+    display: table;
+    float: left;
 }
 
 .project_icon {
@@ -350,14 +367,16 @@ input{
     margin: 2em auto;
     white-space: nowrap;
     border: 1px solid #7f7f7f;
+    border-radius: .2em;
 }
 .email {
     padding: .5em 1em;
-    display: inline-block;
+    display: table;
     background-color: transparent;
     border: none;
     color: white;
     font-size: .9em;
+    float: left;
 }
 
 .email:focus{
@@ -368,9 +387,9 @@ input{
     text-decoration: none;
     padding: .5em 1em;
     background-color: #7f7f7f;
-    display: inline-block;
+    display: table;
     vertical-align: bottom;
-    margin: 0 -2px;
+    float: left;
 }
 .social-wrapper {
     margin: 1em auto;
