@@ -95,6 +95,64 @@ input{
 
 }
 
+/* WELCOME SECTION STYLES */
+
+.welcome {
+    padding: 3em 1em 2em;
+    color: #fff;
+    background-color: #008ecc;
+}
+
+.welcome-tilte {
+    text-transform: uppercase;    
+}
+
+.welcome-message-wrapper {
+    margin: 1em 0;
+}
+
+.welcome-image {
+    float: left;
+    width: 10em;
+    height: 10em;
+    margin: 0 1em 1em 0;
+    border-radius: 50%;
+}
+
+.welcome-desc {
+    font-size: .9em;
+}
+
+.welcom-more {
+    color: white;
+    font-size: 1em;
+    display: table;
+    margin-left: auto;
+    padding: .8em 1.5em;
+    border: .15em solid white;
+    border-radius: .2em;
+    text-decoration: none;
+}
+
+
+/* RECENT WORKS STYLES */
+
+.recent-works {
+    padding: .5em 2em;
+} 
+
+.works-title {
+    font-size: 1.2em;
+    text-transform: uppercase;
+} 
+
+.works-desc {
+    font-size: .9em;
+    color: #6d6666;
+    margin-bottom: 0;
+} 
+
+
 /* SERVICES SECTION */
 
 .services {
