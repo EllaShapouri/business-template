@@ -33,33 +33,43 @@
 
         <main class="main">
 
-            <section class="welcome">
+            <div class="welcome_bg">
                 <div class="inner-container">
-                    <h2 class="welcome-tilte">welcome to our website</h2>
-                    <div class="welcome-message-wrapper clearfix">
-                        <img src="images/person.jpg" alt="person image" class="welcome-image">
-                        <p class="welcome-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta similique saepe dolorem perspiciatis labore maiores temporibus nobis, laborum, fugiat corporis tenetur nulla eum voluptatem totam cupiditate provident quasi, cumque fuga.
-                        </p>
+                    <div class="clearfix">
+                        <div class="welcome-wrapper">
+                            <section class="welcome">
+                                <h2 class="welcome-tilte">welcome to our website</h2>
+                                <div class="welcome-message-wrapper clearfix">
+                                    <img src="images/person.jpg" alt="person image" class="welcome-image">
+                                    <p class="welcome-desc">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta similique saepe dolorem perspiciatis labore maiores temporibus nobis, laborum, fugiat corporis tenetur nulla eum voluptatem totam cupiditate provident quasi, cumque fuga.
+                                    </p>
+                                </div>
+                                <a href="#" class="welcom-more">read more</a>
+                            </section>
+                        </div>
+                        
+                        <div class="works-wrapper">
+                            <section class="recent-works">
+                                <h2 class="works-title">recent works</h2>
+                                <p class="works-desc">
+                                    vitae eaque voluptatum dignissimos vitae assumenda ducimus eligendi culpa vero repellat fugit odio!
+                                </p>
+                                <p class="works-desc">
+                                    vitae eaque voluptatum dignissimos vitae assumenda ducimus eligendi culpa vero repellat fugit odio!
+                                </p>
+                            </section>
+                        </div>
+                       
                     </div>
-                    <a href="#" class="welcom-more">read more</a>
                 </div>
-            </section>
-
-            <section class="recent-works">
-                <div class="innner-container">
-                    <h2 class="works-title">recent works</h2>
-                    <p class="works-desc">
-                        Lorem,llo qui e,  eaque voluptatum dignissimos vitae  eaque voluptatum dignissimos vitae ssimos vitae  eaque voluptatum dignissimos vi ssimos vitae  eaque voluptatum dignissimos vi ssimos vitae  eaque voluptatum dignissimos vi  eaque voluptatum dignissimos vitae eaque voluptatum dignissimos vitae assumenda ducimus eligendi culpa vero repellat fugit odio!
-                    </p>
-                </div>
-            </section>
+            </div>
 
             <section class="services">
                 <div class="inner-container">
                     <h2 class="section-tilte">services</h2>
                     <p class="section-tagline">Lorem, ipsum dolor sit amet</p>
-                    <div class="clearfix">
+                    <div class="clearfix servecis-wrapper">
                         <div class="service">
                             <span class="service-icon fa fa-clock-o"></span>
                             <h3 class="service-title">serveice title</h3>
@@ -113,6 +123,20 @@
                         </div>
                         <div class="project-wrapper">
                             <figure class="project">
+                                <img class="project-img" src="images/3.jpg" alt="">
+                                <figcaption class="project-caption">
+                                    <h3 class="project_name">projetc name</h3>
+                                    <p class="project_desc">Lorem tetur adipisicing elit. Sit odit quam dolor magnam nihil debitis dolorum.</p>
+                                </figcaption>
+        
+                                <ul class="project_icons clearfix">
+                                    <li><a href="#" class="project_icon project_iconblue fa fa-search"></a></li>
+                                    <li><a href="#" class="project_icon project_icongray fa fa-link"></a></li>
+                                </ul>
+                            </figure>
+                        </div>
+                        <div class="project-wrapper">
+                            <figure class="project">
                                 <img class="project-img" src="images/2.png" alt="">
                                 <figcaption class="project-caption">
                                     <h3 class="project_name">projetc name</h3>
@@ -142,6 +166,20 @@
                         <div class="project-wrapper">
                             <figure class="project">
                                 <img class="project-img" src="images/4.png" alt="">
+                                <figcaption class="project-caption">
+                                    <h3 class="project_name">projetc name</h3>
+                                    <p class="project_desc">Lorem tetur adipisicing elit. Sit odit quam dolor magnam nihil debitis dolorum.</p>
+                                </figcaption>
+        
+                                <ul class="project_icons clearfix">
+                                    <li><a href="#" class="project_icon project_iconblue fa fa-search"></a></li>
+                                    <li><a href="#" class="project_icon project_icongray fa fa-link"></a></li>
+                                </ul>
+                            </figure>
+                        </div>
+                        <div class="project-wrapper">
+                            <figure class="project">
+                                <img class="project-img" src="images/3.jpg" alt="">
                                 <figcaption class="project-caption">
                                     <h3 class="project_name">projetc name</h3>
                                     <p class="project_desc">Lorem tetur adipisicing elit. Sit odit quam dolor magnam nihil debitis dolorum.</p>
@@ -194,35 +232,41 @@
 
                     <h2 class="section-tilte">our contacts</h2>
                     <p class="section-tagline">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                    <div class="contact-form">
-                        <input class="input contact-input" type="text" placeholder="Your Name ...">
-                        <input class="input contact-input" type="email" placeholder="Your Email ...">
-                        <input class="input contact-input" type="tel" placeholder="Your Phone Number ...">
-                        <textarea class="input contact-message" rows="5" placeholder="Message ..."></textarea>
-                        <button class="input contact-btn">send</button>
-                    </div>
-
-                    <div class="contact-us">
-                        <h3 class="contact-us-title">Contact Us</h3>
-                        <div class="contact-wrapper">
-                            <span class="contact-icon fa fa-pencil"></span>
-                            <span class="contact-text">
-                                JOHN "GULLIBLE" DOE <br>
-                                CENTER FOR FINANCIAL ASSISTANCE TO DEPOSED NIGERIAN ROYALTY <br>
-                                421 E DRACHMAN <br>
-                                TUCSON AZ 85705-7598 <br>
-                                USA
-                            </span>
+                    <div class="clearfix">
+                        <div class="contact-form-wrapper">
+                            <div class="contact-form">
+                                <input class="input contact-input" type="text" placeholder="Your Name ...">
+                                <input class="input contact-input" type="email" placeholder="Your Email ...">
+                                <input class="input contact-input" type="tel" placeholder="Your Phone Number ...">
+                                <textarea class="input contact-message" rows="5" placeholder="Message ..."></textarea>
+                                <button class="input contact-btn">send</button>
+                            </div>
                         </div>
-                        <div class="contact-wrapper">
-                            <span class="contact-icon fa fa-phone"></span>
-                            <span class="contact-text">Phone: +1 (858) 609-6590</span>
+                       
+                        <div class="contact-us-wrapper">
+                            <div class="contact-us">
+                                <h3 class="contact-us-title">Contact Us</h3>
+                                <div class="contact-wrapper">
+                                    <span class="contact-icon fa fa-pencil"></span>
+                                    <span class="contact-text">
+                                        JOHN "GULLIBLE" DOE <br>
+                                        CENTER FOR FINANCIAL ASSISTANCE TO DEPOSED NIGERIAN ROYALTY <br>
+                                        421 E DRACHMAN <br>
+                                        TUCSON AZ 85705-7598 <br>
+                                        USA
+                                    </span>
+                                </div>
+                                <div class="contact-wrapper">
+                                    <span class="contact-icon fa fa-phone"></span>
+                                    <span class="contact-text">Phone: +1 (858) 609-6590</span>
+                                </div>
+                                <div class="contact-wrapper">
+                                    <span class="contact-icon fa fa-envelope-o"></span>
+                                    <span class="contact-text">Email: seyedmojtabaseyedi@gmail.com</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="contact-wrapper">
-                            <span class="contact-icon fa fa-envelope-o"></span>
-                            <span class="contact-text">Email: seyedmojtabaseyedi@gmail.com</span>
-                        </div>
+                        
                     </div>
 
                 </div>

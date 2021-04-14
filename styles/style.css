@@ -29,9 +29,10 @@ input{
 }
 
 .inner-container{
-    width: 90%;
     max-width: 75em;
     margin: 0 auto;
+    /* padding: 0 2em;
+    background-color: transparent; */
 }
 
 .header {
@@ -97,18 +98,45 @@ input{
 
 /* WELCOME SECTION STYLES */
 
+@media (min-width : 48em) {
+    .welcome_bg {
+        background-image: linear-gradient(to right,#fff 50%,#009ee3 50%);
+    }
+    .welcome-wrapper {
+        float: right;
+        width: 66.66%;
+    }
+    .welcome {
+        position: relative;
+    }
+    .welcome::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 0;
+        margin: auto 0;
+        border-style: solid;
+        border-width: 1.2em 0 1.2em 1em;
+        border-color: transparent transparent transparent #fff;
+    }
+}
+
 .welcome {
-    padding: 3em 1em 2em;
+    padding: 1em 2em 2em;
     color: #fff;
-    background-color: #008ecc;
+    background-color: #009ee3;
 }
 
 .welcome-tilte {
+    font-size: 1.2em;
     text-transform: uppercase;    
 }
 
 .welcome-message-wrapper {
-    margin: 1em 0;
+    margin: 3em 0;
 }
 
 .welcome-image {
@@ -134,21 +162,28 @@ input{
     text-decoration: none;
 }
 
-
 /* RECENT WORKS STYLES */
 
+@media (min-width : 48em) {
+    .works-wrapper {
+        float: right;
+        width: 33.33%;
+    }
+}
+
 .recent-works {
-    padding: .5em 2em;
+    padding: 1em 2em;
 } 
 
 .works-title {
     font-size: 1.2em;
     text-transform: uppercase;
+    
 } 
 
 .works-desc {
     font-size: .9em;
-    color: #6d6666;
+    color: #999;
     margin-bottom: 0;
 } 
 
@@ -156,17 +191,30 @@ input{
 /* SERVICES SECTION */
 
 .services {
-    padding: 3em 0;
+    padding: 3em 2em;
 }
 
 .service {
-    float: left;
-    width: 50%;
     text-align: center;
     color: #999;
     padding: 1em;
     padding-bottom: 2em;
 }
+
+@media (min-width:37em) {
+    .service { 
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (min-width:56em) {
+    .service {
+        width: 25%; 
+        float: left;
+    }
+}
+
 .service-icon {
     font-size: 2em;
 
@@ -213,13 +261,24 @@ input{
 
 .featured-projects {
     background-color: #f8f8f8;
-    padding: 3em 0 ;
+    padding: 3em 2em ;
 }
 
 .project-wrapper{
     float: left;
-    width: 50%;
     padding: .5em;
+}
+
+@media (min-width : 37em) {
+    .project-wrapper{
+        width: 50%;
+    }
+}
+
+@media (min-width : 56em) {
+    .project-wrapper{
+        width: 33.33%;
+    }
 }
 
 .project {
@@ -234,19 +293,23 @@ input{
 }
 
 .project-caption {
-    background-color: hsla(0, 100%, 100%, .3);
+    background: hsla(0,0%,0%,.3);
     color: #fff;
     width: 100%;
     position: absolute;
     bottom: 0;
     z-index: 1;
     padding: .5em 1em;
-    transform: translate3d(0,100%,0);
-    transition: .3s transform;
 }
 
-.project:hover .project-caption {
-    transform: translate3d(0,0,0);
+@media (min-width:48em) {
+    .project-caption {
+        transform: translate3d(0,100%,0);
+        transition: .3s transform;
+    }
+    .project:hover .project-caption {
+        transform: translate3d(0,0,0);
+    }
 }
 
 .project_name {
@@ -267,12 +330,17 @@ input{
     top: 0;
     right: 0;
     z-index: 2;
-    opacity: 0;
     transition: .3s opacity;
 }
 
-.project:hover .project_icons {
-    opacity: 1;
+@media (min-width:48em) {
+    .project_icons {
+        font-size: 1.2em;
+        opacity: 0;
+    }   
+    .project:hover .project_icons {
+        opacity: 1;
+    }
 }
 
 .project_icons li {
@@ -309,7 +377,7 @@ input{
 }
 
 .people-section-wrapper {
-    padding: 3em 0 2em 0;
+    padding: 3em 2em 2em;
     text-align: center;
 }
 
@@ -374,6 +442,19 @@ input{
     padding: 2em;
 }
 
+@media (min-width:48em){
+    .contact-form-wrapper {
+        float: left;
+        width: 66.66%;
+        padding-right: 3em;
+    }
+    .contact-us-wrapper {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+
 .input{
     display: block;
     width: 100%;
@@ -385,6 +466,13 @@ input{
     margin: 1em 0;
 }
 
+@media (min-width: 48em) {
+    .contact-input {
+      width: 100%;
+      padding: 1em;
+    }
+  }
+
 .contact-btn {
    background-color: #008ecc;
    color: #fff;
@@ -393,6 +481,15 @@ input{
    text-align: center;
    font-size: .9em;
 }
+
+@media (min-width: 48em) {
+    .contact-btn {
+      display: table;
+      width: auto;
+      margin-left: 0;
+      padding: 1em 5em;
+    }
+  }
 
 .contact-btn:hover {
     cursor: pointer;
@@ -407,7 +504,7 @@ input{
 }
 
 .contact-wrapper {
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .contact-text {
