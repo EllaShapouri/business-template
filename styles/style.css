@@ -597,6 +597,10 @@ input{
     cursor: pointer;
 }
 
+.contact-us {
+    margin: 1em auto;
+}
+
 .contact-us-title {
     font-size: 1.2em;
     color: #333;
