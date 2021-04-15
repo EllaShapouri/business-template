@@ -153,6 +153,7 @@ input{
     display: block;
     width: 8em;
     margin: 1.1em 0;
+    margin-right: 1em;
 }
 
 .banner {
