@@ -28,21 +28,12 @@ input{
     clear: both;
 }
 
-.inner-container{
-    max-width: 75em;
-    margin: 0 auto;
-    /* padding: 0 2em;
-    background-color: transparent; */
-}
-
 .header {
     background-color: #fff;
-    
 }
 
 .top-header-wrapper {
     margin: 0;
-    padding: 0 2em 0 1em;
     position: relative;
 }
 
@@ -50,11 +41,6 @@ input{
     .top-header-wrapper {
         position: static;
     }
-}
-
-
-.nav {
-    float: left;
 }
 
 .nav-toggle {
@@ -200,16 +186,19 @@ input{
 
 /* WELCOME SECTION STYLES */
 
+.welcome {
+    padding: 3em 1em 2em 1em;
+    color: #fff;
+    background-color: #009ee3;
+}
+
 @media (min-width : 48em) {
     .welcome_bg {
         background-image: linear-gradient(to right,#fff 50%,#009ee3 50%);
     }
-    .welcome-wrapper {
-        float: right;
-        width: 66.66%;
-    }
     .welcome {
         position: relative;
+        padding: 1em 1em 2em 2em;
     }
     .welcome::before {
         content: ' ';
@@ -224,12 +213,6 @@ input{
         border-width: 1.2em 0 1.2em 1em;
         border-color: transparent transparent transparent #fff;
     }
-}
-
-.welcome {
-    padding: 1em 2em 2em;
-    color: #fff;
-    background-color: #009ee3;
 }
 
 .welcome-tilte {
@@ -266,15 +249,8 @@ input{
 
 /* RECENT WORKS STYLES */
 
-@media (min-width : 48em) {
-    .works-wrapper {
-        float: right;
-        width: 33.33%;
-    }
-}
-
 .recent-works {
-    padding: 1em 2em;
+    padding: 1em 2em 1em 0;
 } 
 
 .works-title {
@@ -293,28 +269,13 @@ input{
 /* SERVICES SECTION */
 
 .services {
-    padding: 3em 2em;
+    padding: 3em 0;
 }
 
 .service {
     text-align: center;
     color: #999;
-    padding: 1em;
     padding-bottom: 2em;
-}
-
-@media (min-width:37em) {
-    .service { 
-        float: left;
-        width: 50%;
-    }
-}
-
-@media (min-width:56em) {
-    .service {
-        width: 25%; 
-        float: left;
-    }
 }
 
 .service-icon {
@@ -363,30 +324,13 @@ input{
 
 .featured-projects {
     background-color: #f8f8f8;
-    padding: 3em 2em ;
-}
-
-.project-wrapper{
-    float: left;
-    padding: .5em;
-}
-
-@media (min-width : 37em) {
-    .project-wrapper{
-        width: 50%;
-    }
-}
-
-@media (min-width : 56em) {
-    .project-wrapper{
-        width: 33.33%;
-    }
+    padding: 3em 0 ;
 }
 
 .project {
     position: relative;
     overflow: hidden;
-    margin: 0;
+    margin: .5em 0;
 }
 
 .project-img {
@@ -404,7 +348,7 @@ input{
     padding: .5em 1em;
 }
 
-@media (min-width:48em) {
+@media (min-width:61.25em) {
     .project-caption {
         transform: translate3d(0,100%,0);
         transition: .3s transform;
@@ -435,7 +379,7 @@ input{
     transition: .3s opacity;
 }
 
-@media (min-width:48em) {
+@media (min-width:61.25em) {
     .project_icons {
         font-size: 1.2em;
         opacity: 0;
@@ -479,7 +423,7 @@ input{
 }
 
 .people-section-wrapper {
-    padding: 3em 2em 2em;
+    padding: 3em 0 2em;
     text-align: center;
 }
 
@@ -541,21 +485,8 @@ input{
 /* CONTACT STYLES */
 
 .our-contact {
-    padding: 2em;
+    padding: 2em 0;
 }
-
-@media (min-width:48em){
-    .contact-form-wrapper {
-        float: left;
-        width: 66.66%;
-        padding-right: 3em;
-    }
-    .contact-us-wrapper {
-        float: left;
-        width: 33.33%;
-    }
-}
-
 
 .input{
     display: block;
@@ -568,7 +499,7 @@ input{
     margin: 1em 0;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 46.25em) {
     .contact-input {
       width: 100%;
       padding: 1em;
@@ -584,7 +515,7 @@ input{
    font-size: .9em;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 46.25em) {
     .contact-btn {
       display: table;
       width: auto;
@@ -609,9 +540,6 @@ input{
     padding-bottom: 0.5em;
 }
 
-.contact-wrapper {
-    /* white-space: nowrap; */
-}
 
 .contact-text {
     color : #777;

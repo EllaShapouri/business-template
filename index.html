@@ -6,6 +6,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/grid.css">
     <title></title>
 </head>
 <body>
@@ -14,31 +15,39 @@
         <header class="header">
             <div class="top-header-wrapper">
                 <div class="inner-container">
-                    <div class="clearfix">
-                        <h1 class="logo">
-                            <img src="./images/logo.png" alt="this logo" class="logo__img">
-                        </h1>
-                        <nav class="nav">
-                            <a href="" class="fa fa-bars nav-toggle"></a>
-                            <ul class="nav-menu clearfix">
-                                <li class="nav-item"><a href="#" class="nav-link">home</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">works</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">blog</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">about</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
-                            </ul>
-                        </nav>
+                    <div class="row">
+                        <div class="col float-start">
+                            <nav class="nav">
+                                <a href="" class="fa fa-bars nav-toggle"></a>
+                                <ul class="nav-menu clearfix">
+                                    <li class="nav-item"><a href="#" class="nav-link">home</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">works</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">blog</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">about</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col float-end">
+                            <h1 class="logo">
+                                <img src="./images/logo.png" alt="this logo" class="logo__img">
+                            </h1>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="banner">
                 <div class="inner-container">
-                    <div class="baner-wrapper">
-                        <h2 class="banner_title">Template for your company</h2>
-                        <p class="banner_tagline">website for business</p>
-                        <time class="banner_date">Wed Nov 19 2020 <span class="banner_time">04:22</span></time>
-                        <a href="#" class="banner_btn">join us</a>
+                    <div class="row">
+                        <div class="col">
+                            <div class="baner-wrapper">
+                                <h2 class="banner_title">Template for your company</h2>
+                                <p class="banner_tagline">website for business</p>
+                                <time class="banner_date">Wed Nov 19 2020 <span class="banner_time">04:22</span></time>
+                                <a href="#" class="banner_btn">join us</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -48,8 +57,8 @@
 
             <div class="welcome_bg">
                 <div class="inner-container">
-                    <div class="clearfix">
-                        <div class="welcome-wrapper">
+                    <div class="row">
+                        <div class="w12 wt8 float-end">
                             <section class="welcome">
                                 <h2 class="welcome-tilte">welcome to our website</h2>
                                 <div class="welcome-message-wrapper clearfix">
@@ -62,7 +71,7 @@
                             </section>
                         </div>
                         
-                        <div class="works-wrapper">
+                        <div class="col w12 wt4 float-end">
                             <section class="recent-works">
                                 <h2 class="works-title">recent works</h2>
                                 <p class="works-desc">
@@ -82,34 +91,42 @@
                 <div class="inner-container">
                     <h2 class="section-tilte">services</h2>
                     <p class="section-tagline">Lorem, ipsum dolor sit amet</p>
-                    <div class="clearfix servecis-wrapper">
-                        <div class="service">
-                            <span class="service-icon fa fa-clock-o"></span>
-                            <h3 class="service-title">serveice title</h3>
-                            <p class="service-desc">
-                                Lorem, architecto consectetur animi officiis. Laborum natus eligendi eaque pariatur obc
-                            </p>
+                    <div class="row">
+                        <div class="col w12 wl6 wt3 float-start">
+                            <div class="service">
+                                <span class="service-icon fa fa-clock-o"></span>
+                                <h3 class="service-title">serveice title</h3>
+                                <p class="service-desc">
+                                    Lorem, architecto consectetur animi officiis. Laborum natus eligendi eaque pariatur obc
+                                </p>
+                            </div>
                         </div>
-                        <div class="service">
-                            <span class="service-icon fa fa-home"></span>
-                            <h3 class="service-title">serveice title</h3>
-                            <p class="service-desc">
-                                Lorem, architecto consectetur animi officiis. Laborum natus eligendi eaque pariatur obc
-                            </p>
+                        <div class="col w12 wl6 wt3 float-start">
+                            <div class="service">
+                                <span class="service-icon fa fa-home"></span>
+                                <h3 class="service-title">serveice title</h3>
+                                <p class="service-desc">
+                                    Lorem, architecto consectetur animi officiis. Laborum natus eligendi eaque pariatur obc
+                                </p>
+                            </div>
                         </div>
-                        <div class="service">
-                            <span class="service-icon fa fa-heart"></span>
-                            <h3 class="service-title">serveice title</h3>
-                            <p class="service-desc">
-                                Lorem, architecto consectetur animi officiis. Laborum natus eligendi eaque pariatur obc
-                            </p>
+                        <div class="col w12 wl6 wt3 float-start">
+                            <div class="service">
+                                <span class="service-icon fa fa-heart"></span>
+                                <h3 class="service-title">serveice title</h3>
+                                <p class="service-desc">
+                                    Lorem, architecto consectetur animi officiis. Laborum natus eligendi eaque pariatur obc
+                                </p>
+                            </div>
                         </div>
-                        <div class="service">
-                            <span class="service-icon fa fa-bell"></span>
-                            <h3 class="service-title">serveice title</h3>
-                            <p class="service-desc">
-                                Lorem, architecto consectetur animi officiis. Laborum natus eligendi eaque pariatur obc
-                            </p>
+                        <div class="col w12 wl6 wt3 float-start">
+                            <div class="service">
+                                <span class="service-icon fa fa-bell"></span>
+                                <h3 class="service-title">serveice title</h3>
+                                <p class="service-desc">
+                                    Lorem, architecto consectetur animi officiis. Laborum natus eligendi eaque pariatur obc
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,8 +136,8 @@
                 <div class="inner-container">
                     <h2 class="section-tilte">featured projects</h2>
                     <p class="section-tagline">Lorem, ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit</p>
-                    <div class="clearfix">
-                        <div class="project-wrapper">
+                    <div class="row">
+                        <div class="col w12 wl6 wd4 float-start">
                             <figure class="project">
                                 <img class="project-img" src="images/1.jpg" alt="">
                                 <figcaption class="project-caption">
@@ -134,7 +151,7 @@
                                 </ul>
                             </figure>
                         </div>
-                        <div class="project-wrapper">
+                        <div class="col w12 wl6 wd4 float-start">
                             <figure class="project">
                                 <img class="project-img" src="images/3.jpg" alt="">
                                 <figcaption class="project-caption">
@@ -148,7 +165,7 @@
                                 </ul>
                             </figure>
                         </div>
-                        <div class="project-wrapper">
+                        <div class="col w12 wl6 wd4 float-start">
                             <figure class="project">
                                 <img class="project-img" src="images/2.png" alt="">
                                 <figcaption class="project-caption">
@@ -162,7 +179,7 @@
                                 </ul>
                             </figure>
                         </div>
-                        <div class="project-wrapper">
+                        <div class="col w12 wl6 wd4 float-start">
                             <figure class="project">
                                 <img class="project-img" src="images/3.jpg" alt="">
                                 <figcaption class="project-caption">
@@ -176,7 +193,7 @@
                                 </ul>
                             </figure>
                         </div>
-                        <div class="project-wrapper">
+                        <div class="col w12 wl6 wd4 float-start">
                             <figure class="project">
                                 <img class="project-img" src="images/4.png" alt="">
                                 <figcaption class="project-caption">
@@ -190,7 +207,7 @@
                                 </ul>
                             </figure>
                         </div>
-                        <div class="project-wrapper">
+                        <div class="col w12 wl6 wd4 float-start">
                             <figure class="project">
                                 <img class="project-img" src="images/3.jpg" alt="">
                                 <figcaption class="project-caption">
@@ -213,31 +230,33 @@
             <section class="people-say">
                 <div class="people-section-wrapper">
                     <div class="inner-container">
-
-                        <h2 class="section-tilte white_title">what people say</h2>
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="section-tilte white_title">what people say</h2>
                 
-                        <img class="person-picture" src="images/person.jpg" alt="person-picture">
-                       
-                        <div class="comment-box">
-                            <span class="left-quote fa fa-quote-left"></span>
-                            <h3 class="person-name">katty flower</h3>
-                            <p class="person-comment">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cupiditate recusandae 
-                                corporis doloribus. Asperiores deserunt a ex enim dolores.
-                                 obcaecati minima ipsam culpa.expedita ipsum maxime doloribus quas obcaecati
-                                 minima ipsam culpa.
-                            </p>
-                            <span class="right-quote fa fa-quote-right"></span>
-                        </div>
+                                <img class="person-picture" src="images/person.jpg" alt="person-picture">
+                            
+                                <div class="comment-box">
+                                    <span class="left-quote fa fa-quote-left"></span>
+                                    <h3 class="person-name">katty flower</h3>
+                                    <p class="person-comment">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cupiditate recusandae 
+                                        corporis doloribus. Asperiores deserunt a ex enim dolores.
+                                        obcaecati minima ipsam culpa.expedita ipsum maxime doloribus quas obcaecati
+                                        minima ipsam culpa.
+                                    </p>
+                                    <span class="right-quote fa fa-quote-right"></span>
+                                </div>
 
-                        <div class="buttons">
-                            <a href="#" class="fa fa-chevron-left change-comment"></a>
-                            <a href="#" class="fa fa-chevron-right change-comment"></a>
+                                <div class="buttons">
+                                    <a href="#" class="fa fa-chevron-left change-comment"></a>
+                                    <a href="#" class="fa fa-chevron-right change-comment"></a>
+                                </div>
+
+                            </div>
                         </div>
-    
                     </div>
                 </div>
-                
             </section>
 
             <section class="our-contact">
@@ -245,8 +264,8 @@
 
                     <h2 class="section-tilte">our contacts</h2>
                     <p class="section-tagline">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="clearfix">
-                        <div class="contact-form-wrapper">
+                    <div class="row">
+                        <div class="col w12 wt6 float-start">
                             <div class="contact-form">
                                 <input class="input contact-input" type="text" placeholder="Your Name ...">
                                 <input class="input contact-input" type="email" placeholder="Your Email ...">
@@ -256,14 +275,15 @@
                             </div>
                         </div>
                        
-                        <div class="contact-us-wrapper">
+                        <div class="col w12 wt6 float-start">
                             <div class="contact-us">
                                 <h3 class="contact-us-title">Contact Us</h3>
                                 <div class="contact-wrapper">
                                     <span class="contact-icon fa fa-pencil"></span>
                                     <span class="contact-text">
                                         JOHN "GULLIBLE" DOE <br>
-                                        CENTER FOR FINANCIAL ASSISTANCE TO DEPOSED NIGERIAN ROYALTY <br>
+                                        CENTER FOR FINANCIAL ASSISTANCE  <br>
+                                        TO DEPOSED NIGERIAN ROYALTY <br>
                                         421 E DRACHMAN <br>
                                         TUCSON AZ 85705-7598 <br>
                                         USA
@@ -293,23 +313,27 @@
 
         <footer class="footer">
             <div class="inner-container">
-                <h2 class="footer_title">newsletter signup</h2>
-                <p class="footer_tadline">get cool stuff. we hate spam!</p>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="footer_title">newsletter signup</h2>
+                        <p class="footer_tadline">get cool stuff. we hate spam!</p>
 
-                <div class="email-box clearfix">
-                    <input type="email" class="email" placeholder="Enter your email">
-                    <a href="#" class="email-btn fa fa-send"></a>
+                        <div class="email-box clearfix">
+                            <input type="email" class="email" placeholder="Enter your email">
+                            <a href="#" class="email-btn fa fa-send"></a>
+                        </div>
+
+                        <ul class="social-wrapper">
+                            <li class="social-links"><a class="social-link fa fa-twitter" href=""></a></li>
+                            <li class="social-links"><a class="social-link fa fa-facebook" href=""></a></li>
+                            <li class="social-links"><a class="social-link fa fa-dribbble" href=""></a></li>
+                            <li class="social-links"><a class="social-link fa fa-skype" href=""></a></li>
+                            <li class="social-links"><a class="social-link fa fa-youtube" href=""></a></li>
+                        </ul>
+
+                        <p class="copyright">copyright 2020</p>
+                    </div>
                 </div>
-
-                <ul class="social-wrapper">
-                    <li class="social-links"><a class="social-link fa fa-twitter" href=""></a></li>
-                    <li class="social-links"><a class="social-link fa fa-facebook" href=""></a></li>
-                    <li class="social-links"><a class="social-link fa fa-dribbble" href=""></a></li>
-                    <li class="social-links"><a class="social-link fa fa-skype" href=""></a></li>
-                    <li class="social-links"><a class="social-link fa fa-youtube" href=""></a></li>
-                </ul>
-
-                <p class="copyright">copyright 2020</p>
             </div>
         </footer>
 
